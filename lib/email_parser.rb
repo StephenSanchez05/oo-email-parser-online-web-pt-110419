@@ -18,6 +18,6 @@ class EmailAddressParser
   end
   
   def self.parse
-    @@email_list.uniq!
+    @@email_list
   end
 end
