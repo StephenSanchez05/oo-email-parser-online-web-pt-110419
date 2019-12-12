@@ -10,7 +10,7 @@ class EmailAddressParser
   
   def initialize(email)
     @email = email 
-    @@email_list << @email.split
+    email_single = @email.split
   end
   
   def self.parse
