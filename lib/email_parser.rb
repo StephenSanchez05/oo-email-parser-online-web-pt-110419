@@ -10,11 +10,16 @@ class EmailAddressParser
   @@email_list = []
   
   def initialize(email)
-   @@email_list << email
+    @email = email 
+    email_single = @email.split
+    email_single.each do |v|
+      unless @@email_list.include?(v)
+      @@email_list << v 
     end
-
+    end
+  end
   
-  def self.parse
+  def parse
     @@email_list
   end
 end
