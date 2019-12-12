@@ -7,19 +7,19 @@ class EmailAddressParser
   
   attr_accessor  :email, :parse
   
-  @@email_list = []
   
   def initialize(email)
+    @email_list = []
     @email = email 
     email_single = @email.split(/, | /)
     email_single.each do |v|
       unless @@email_list.include?(v)
-      @@email_list << v 
+      @email_list << v 
     end
     end
   end
   
   def parse
-    @@email_list.uniq
+    @email_list.uniq
   end
 end
