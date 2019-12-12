@@ -12,3 +12,8 @@ class EmailAddressParser
     @email = email 
     @@email_list << @email.split
   end
+  
+  def self.parse
+    @@email_list
+  end
+end
