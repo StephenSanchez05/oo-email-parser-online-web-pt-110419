@@ -4,7 +4,7 @@
 # or whitespace (' ').
 class EmailAddressParser
   
-  attr_accessor  :email :parse
+  attr_accessor  :email, :parse
   
   @@email_list = []
   
