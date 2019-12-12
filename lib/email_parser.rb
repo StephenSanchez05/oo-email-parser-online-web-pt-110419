@@ -10,4 +10,5 @@ class EmailAddressParser
   
   def initialize(email)
     @email = email 
+    @@email_list << @email.split
   end
