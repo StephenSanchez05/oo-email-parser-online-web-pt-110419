@@ -11,7 +11,7 @@ class EmailAddressParser
   
   def initialize(email)
     @email = email 
-    email_single = @email.split
+    email_single = @email.split(/, | /)
     email_single.each do |v|
       unless @@email_list.include?(v)
       @@email_list << v 
