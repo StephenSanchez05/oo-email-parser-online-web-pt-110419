@@ -4,7 +4,7 @@
 # or whitespace (' ').
 class EmailAddressParser
   
-  attr_accessor  :Email
+  attr_accessor  :email :parse
   
   @@email_list = []
   
@@ -14,6 +14,6 @@ class EmailAddressParser
   end
   
   def self.parse
-    @@email_list
+    @@email_list.uniq!
   end
 end
