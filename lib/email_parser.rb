@@ -5,4 +5,4 @@
 class EmailAddressParser
   
   def initialize
-    
+    @name = name
