@@ -15,6 +15,7 @@ class EmailAddressParser
       unless @@email_list.include?(v)
       @@email_list << v 
     end
+    end
   end
   
   def self.parse
